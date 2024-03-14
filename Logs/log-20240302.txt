@@ -1,0 +1,131 @@
+2024-03-02 21:29:25.241 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE DATABASE `xchange`;
+2024-03-02 21:29:25.365 +02:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `__EFMigrationsHistory` (
+    `MigrationId` varchar(150) CHARACTER SET utf8mb4 NOT NULL,
+    `ProductVersion` varchar(32) CHARACTER SET utf8mb4 NOT NULL,
+    CONSTRAINT `PK___EFMigrationsHistory` PRIMARY KEY (`MigrationId`)
+) CHARACTER SET=utf8mb4;
+2024-03-02 21:29:25.396 +02:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='xchange' AND TABLE_NAME='__EFMigrationsHistory';
+2024-03-02 21:29:25.403 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2024-03-02 21:29:25.412 +02:00 [INF] Applying migration '20240302185710_initial'.
+2024-03-02 21:29:25.467 +02:00 [ERR] Failed executing DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `AspNetRoles` (
+    `Id` nvarchar(450) NOT NULL,
+    `Name` nvarchar(256) NULL,
+    `NormalizedName` nvarchar(256) NULL,
+    `ConcurrencyStamp` nvarchar(max) NULL,
+    CONSTRAINT `PK_AspNetRoles` PRIMARY KEY (`Id`)
+);
+2024-03-02 21:36:38.816 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='xchange' AND TABLE_NAME='__EFMigrationsHistory';
+2024-03-02 21:36:38.857 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='xchange' AND TABLE_NAME='__EFMigrationsHistory';
+2024-03-02 21:36:38.878 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2024-03-02 21:36:38.889 +02:00 [INF] Applying migration '20240302193620_initial'.
+2024-03-02 21:36:38.926 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER DATABASE CHARACTER SET utf8mb4;
+2024-03-02 21:36:38.936 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `Books` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `Title` longtext CHARACTER SET utf8mb4 NULL,
+    `Author` longtext CHARACTER SET utf8mb4 NULL,
+    CONSTRAINT `PK_Books` PRIMARY KEY (`Id`)
+) CHARACTER SET=utf8mb4;
+2024-03-02 21:36:38.944 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20240302193620_initial', '8.0.2');
+2024-03-02 21:55:39.388 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='xchange' AND TABLE_NAME='__EFMigrationsHistory';
+2024-03-02 21:55:39.425 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='xchange' AND TABLE_NAME='__EFMigrationsHistory';
+2024-03-02 21:55:39.442 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2024-03-02 21:55:39.450 +02:00 [INF] Applying migration '20240302195531_category'.
+2024-03-02 21:55:39.502 +02:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Books` ADD `CategoryId` int NOT NULL DEFAULT 0;
+2024-03-02 21:55:39.512 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `Category` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `Name` longtext CHARACTER SET utf8mb4 NOT NULL,
+    CONSTRAINT `PK_Category` PRIMARY KEY (`Id`)
+) CHARACTER SET=utf8mb4;
+2024-03-02 21:55:39.527 +02:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX `IX_Books_CategoryId` ON `Books` (`CategoryId`);
+2024-03-02 21:55:39.558 +02:00 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Books` ADD CONSTRAINT `FK_Books_Category_CategoryId` FOREIGN KEY (`CategoryId`) REFERENCES `Category` (`Id`) ON DELETE CASCADE;
+2024-03-02 21:55:39.559 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20240302195531_category', '8.0.2');
+2024-03-02 22:08:13.698 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE DATABASE `xchange`;
+2024-03-02 22:08:13.805 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `__EFMigrationsHistory` (
+    `MigrationId` varchar(150) CHARACTER SET utf8mb4 NOT NULL,
+    `ProductVersion` varchar(32) CHARACTER SET utf8mb4 NOT NULL,
+    CONSTRAINT `PK___EFMigrationsHistory` PRIMARY KEY (`MigrationId`)
+) CHARACTER SET=utf8mb4;
+2024-03-02 22:08:13.824 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='xchange' AND TABLE_NAME='__EFMigrationsHistory';
+2024-03-02 22:08:13.828 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2024-03-02 22:08:13.838 +02:00 [INF] Applying migration '20240302200657_initial'.
+2024-03-02 22:08:13.867 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER DATABASE CHARACTER SET utf8mb4;
+2024-03-02 22:08:13.876 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `Categories` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `Name` longtext CHARACTER SET utf8mb4 NOT NULL,
+    CONSTRAINT `PK_Categories` PRIMARY KEY (`Id`)
+) CHARACTER SET=utf8mb4;
+2024-03-02 22:08:13.904 +02:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `Books` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `Title` longtext CHARACTER SET utf8mb4 NULL,
+    `Author` longtext CHARACTER SET utf8mb4 NULL,
+    `CategoryId` int NOT NULL,
+    CONSTRAINT `PK_Books` PRIMARY KEY (`Id`),
+    CONSTRAINT `FK_Books_Categories_CategoryId` FOREIGN KEY (`CategoryId`) REFERENCES `Categories` (`Id`) ON DELETE CASCADE
+) CHARACTER SET=utf8mb4;
+2024-03-02 22:08:13.906 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Categories` (`Id`, `Name`)
+VALUES (1, 'Fiction'),
+(2, 'Non-Fiction'),
+(3, 'Science Fiction');
+2024-03-02 22:08:13.909 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Books` (`Id`, `Author`, `CategoryId`, `Title`)
+VALUES (1, 'Author 1', 1, 'Book 1'),
+(2, 'Author 2', 1, 'Book 2'),
+(3, 'Author 3', 2, 'Book 3'),
+(4, 'Author 4', 2, 'Book 4'),
+(5, 'Author 5', 3, 'Book 5');
+2024-03-02 22:08:13.932 +02:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX `IX_Books_CategoryId` ON `Books` (`CategoryId`);
+2024-03-02 22:08:13.933 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20240302200657_initial', '8.0.2');
+2024-03-02 22:12:25.131 +02:00 [INF] Now listening on: https://localhost:7040
+2024-03-02 22:12:25.164 +02:00 [INF] Now listening on: http://localhost:5218
+2024-03-02 22:12:25.205 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-02 22:12:25.208 +02:00 [INF] Hosting environment: Development
+2024-03-02 22:12:25.210 +02:00 [INF] Content root path: C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi
+2024-03-02 22:12:25.212 +02:00 [INF] Application Is Starting
+2024-03-02 22:12:26.483 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/index.html - null null
+2024-03-02 22:12:26.727 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/index.html - 200 null text/html;charset=utf-8 248.9808ms
+2024-03-02 22:12:26.735 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-02 22:12:26.741 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_vs/browserLink - null null
+2024-03-02 22:12:26.749 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 14.2846ms
+2024-03-02 22:12:26.798 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_vs/browserLink - 200 null text/javascript; charset=UTF-8 57.4005ms
+2024-03-02 22:12:26.842 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - null null
+2024-03-02 22:12:26.941 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 99.1888ms

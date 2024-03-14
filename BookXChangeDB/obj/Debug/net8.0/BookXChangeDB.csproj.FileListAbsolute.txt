@@ -1,0 +1,14 @@
+C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi\BookXChangeDB\bin\Debug\net8.0\BookXChangeDB.deps.json
+C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi\BookXChangeDB\bin\Debug\net8.0\BookXChangeDB.runtimeconfig.json
+C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi\BookXChangeDB\bin\Debug\net8.0\BookXChangeDB.dll
+C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi\BookXChangeDB\bin\Debug\net8.0\BookXChangeDB.pdb
+C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi\BookXChangeDB\obj\Debug\net8.0\BookXChangeDB.csproj.AssemblyReference.cache
+C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi\BookXChangeDB\obj\Debug\net8.0\BookXChangeDB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi\BookXChangeDB\obj\Debug\net8.0\BookXChangeDB.AssemblyInfoInputs.cache
+C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi\BookXChangeDB\obj\Debug\net8.0\BookXChangeDB.AssemblyInfo.cs
+C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi\BookXChangeDB\obj\Debug\net8.0\BookXChangeDB.csproj.CoreCompileInputs.cache
+C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi\BookXChangeDB\obj\Debug\net8.0\BookXChangeDB.dll
+C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi\BookXChangeDB\obj\Debug\net8.0\refint\BookXChangeDB.dll
+C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi\BookXChangeDB\obj\Debug\net8.0\BookXChangeDB.pdb
+C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi\BookXChangeDB\obj\Debug\net8.0\BookXChangeDB.genruntimeconfig.cache
+C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi\BookXChangeDB\obj\Debug\net8.0\ref\BookXChangeDB.dll

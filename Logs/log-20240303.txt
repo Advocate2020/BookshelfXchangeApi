@@ -1,0 +1,869 @@
+2024-03-03 15:04:32.730 +02:00 [INF] Now listening on: https://localhost:7040
+2024-03-03 15:04:32.782 +02:00 [INF] Now listening on: http://localhost:5218
+2024-03-03 15:04:32.826 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-03 15:04:32.829 +02:00 [INF] Hosting environment: Development
+2024-03-03 15:04:32.830 +02:00 [INF] Content root path: C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi
+2024-03-03 15:04:32.832 +02:00 [INF] Application Is Starting
+2024-03-03 15:04:34.479 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/index.html - null null
+2024-03-03 15:04:34.875 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/index.html - 200 null text/html;charset=utf-8 395.91ms
+2024-03-03 15:04:34.888 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-03 15:04:34.892 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_vs/browserLink - null null
+2024-03-03 15:04:34.930 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 41.7973ms
+2024-03-03 15:04:35.011 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_vs/browserLink - 200 null text/javascript; charset=UTF-8 119.0281ms
+2024-03-03 15:04:35.083 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - null null
+2024-03-03 15:04:35.232 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 149.4659ms
+2024-03-03 15:05:15.672 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/WeatherForecast - null null
+2024-03-03 15:05:15.706 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.WeatherForecastController.Get (BookXChangeApi)'
+2024-03-03 15:05:15.730 +02:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[BookXChangeApi.WeatherForecast] Get() on controller BookXChangeApi.Controllers.WeatherForecastController (BookXChangeApi).
+2024-03-03 15:05:15.754 +02:00 [INF] Executing ObjectResult, writing value of type 'BookXChangeApi.WeatherForecast[]'.
+2024-03-03 15:05:15.774 +02:00 [INF] Executed action BookXChangeApi.Controllers.WeatherForecastController.Get (BookXChangeApi) in 26.7922ms
+2024-03-03 15:05:15.780 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.WeatherForecastController.Get (BookXChangeApi)'
+2024-03-03 15:05:15.787 +02:00 [INF] HTTP GET /WeatherForecast responded 200 in 84.6027 ms
+2024-03-03 15:05:15.795 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/WeatherForecast - 200 null application/json; charset=utf-8 123.5135ms
+2024-03-03 15:40:21.878 +02:00 [INF] Now listening on: https://localhost:7040
+2024-03-03 15:40:21.913 +02:00 [INF] Now listening on: http://localhost:5218
+2024-03-03 15:40:21.972 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-03 15:40:21.976 +02:00 [INF] Hosting environment: Development
+2024-03-03 15:40:21.979 +02:00 [INF] Content root path: C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi
+2024-03-03 15:40:21.986 +02:00 [INF] Application Is Starting
+2024-03-03 15:40:23.035 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/index.html - null null
+2024-03-03 15:40:23.291 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/index.html - 200 null text/html;charset=utf-8 262.9865ms
+2024-03-03 15:40:23.672 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-03 15:40:23.672 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_vs/browserLink - null null
+2024-03-03 15:40:23.683 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 11.3846ms
+2024-03-03 15:40:23.741 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_vs/browserLink - 200 null text/javascript; charset=UTF-8 69.5111ms
+2024-03-03 15:40:23.809 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - null null
+2024-03-03 15:40:23.927 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 118.0674ms
+2024-03-03 15:40:38.510 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/api/Category/1 - null null
+2024-03-03 15:40:38.535 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-03 15:40:38.603 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategory(Int32) on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-03 15:40:38.631 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 9.0427ms
+2024-03-03 15:40:38.641 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-03 15:40:38.652 +02:00 [ERR] HTTP GET /api/Category/1 responded 500 in 121.3970 ms
+System.InvalidOperationException: Unable to resolve service for type 'BookXChangeApi.IRepository.IUnitOfWork' while attempting to activate 'BookXChangeApi.Controllers.CategoryController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-03-03 15:40:38.738 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'BookXChangeApi.IRepository.IUnitOfWork' while attempting to activate 'BookXChangeApi.Controllers.CategoryController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-03-03 15:40:38.763 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/api/Category/1 - 500 null text/plain; charset=utf-8 253.7145ms
+2024-03-03 15:42:27.286 +02:00 [INF] Now listening on: https://localhost:7040
+2024-03-03 15:42:27.341 +02:00 [INF] Now listening on: http://localhost:5218
+2024-03-03 15:42:27.393 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-03 15:42:27.396 +02:00 [INF] Hosting environment: Development
+2024-03-03 15:42:27.400 +02:00 [INF] Content root path: C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi
+2024-03-03 15:42:27.404 +02:00 [INF] Application Is Starting
+2024-03-03 15:42:28.244 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/index.html - null null
+2024-03-03 15:42:28.559 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/index.html - 200 null text/html;charset=utf-8 320.3084ms
+2024-03-03 15:42:28.924 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-03 15:42:28.924 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_vs/browserLink - null null
+2024-03-03 15:42:28.942 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 14.9929ms
+2024-03-03 15:42:29.007 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_vs/browserLink - 200 null text/javascript; charset=UTF-8 83.6466ms
+2024-03-03 15:42:29.076 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - null null
+2024-03-03 15:42:29.215 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 138.8162ms
+2024-03-03 15:42:37.545 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/api/Category/1 - null null
+2024-03-03 15:42:37.577 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-03 15:42:37.642 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategory(Int32) on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-03 15:42:37.668 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 5.9191ms
+2024-03-03 15:42:37.676 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-03 15:42:37.685 +02:00 [ERR] HTTP GET /api/Category/1 responded 500 in 113.9070 ms
+System.InvalidOperationException: Unable to resolve service for type 'BookXChangeApi.IRepository.IUnitOfWork' while attempting to activate 'BookXChangeApi.Controllers.CategoryController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-03-03 15:42:37.743 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'BookXChangeApi.IRepository.IUnitOfWork' while attempting to activate 'BookXChangeApi.Controllers.CategoryController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-03-03 15:42:37.767 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/api/Category/1 - 500 null text/plain; charset=utf-8 222.9225ms
+2024-03-03 15:51:28.077 +02:00 [INF] Now listening on: https://localhost:7040
+2024-03-03 15:51:28.131 +02:00 [INF] Now listening on: http://localhost:5218
+2024-03-03 15:51:28.188 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-03 15:51:28.191 +02:00 [INF] Hosting environment: Development
+2024-03-03 15:51:28.193 +02:00 [INF] Content root path: C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi
+2024-03-03 15:51:28.196 +02:00 [INF] Application Is Starting
+2024-03-03 15:51:29.285 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/index.html - null null
+2024-03-03 15:51:29.619 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/index.html - 200 null text/html;charset=utf-8 341.6106ms
+2024-03-03 15:51:29.776 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_vs/browserLink - null null
+2024-03-03 15:51:29.776 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-03 15:51:29.814 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 37.6973ms
+2024-03-03 15:51:29.867 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_vs/browserLink - 200 null text/javascript; charset=UTF-8 90.6791ms
+2024-03-03 15:51:29.956 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - null null
+2024-03-03 15:51:30.084 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 128.1979ms
+2024-03-03 15:51:38.192 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/api/Category/1 - null null
+2024-03-03 15:51:38.223 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-03 15:51:38.292 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategory(Int32) on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-03 15:51:41.953 +02:00 [INF] Executed DbCommand (106ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Name`, `b`.`Id`, `b`.`Author`, `b`.`CategoryId`, `b`.`Title`
+FROM (
+    SELECT `c`.`Id`, `c`.`Name`
+    FROM `Categories` AS `c`
+    WHERE `c`.`Id` = @__id_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN `Books` AS `b` ON `t`.`Id` = `b`.`CategoryId`
+ORDER BY `t`.`Id`
+2024-03-03 15:51:42.417 +02:00 [INF] Executing OkObjectResult, writing value of type 'BookXChangeApi.DTOs.CategoryDTO'.
+2024-03-03 15:51:42.469 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 4155.466ms
+2024-03-03 15:51:42.476 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-03 15:51:42.486 +02:00 [ERR] HTTP GET /api/Category/1 responded 500 in 4268.4033 ms
+System.Text.Json.JsonException: A possible object cycle was detected. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32. Consider using ReferenceHandler.Preserve on JsonSerializerOptions to support cycles. Path: $.Books.Category.Books.Category.Books.Category.Books.Category.Books.Category.Books.Category.Books.Category.Books.Category.Books.Category.Books.Category.Books.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_SerializerCycleDetected(Int32 maxDepth)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-03-03 15:51:42.631 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Text.Json.JsonException: A possible object cycle was detected. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32. Consider using ReferenceHandler.Preserve on JsonSerializerOptions to support cycles. Path: $.Books.Category.Books.Category.Books.Category.Books.Category.Books.Category.Books.Category.Books.Category.Books.Category.Books.Category.Books.Category.Books.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_SerializerCycleDetected(Int32 maxDepth)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-03-03 15:51:42.762 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/api/Category/1 - 500 null text/plain; charset=utf-8 4571.1187ms
+2024-03-03 15:55:18.338 +02:00 [INF] Now listening on: https://localhost:7040
+2024-03-03 15:55:18.372 +02:00 [INF] Now listening on: http://localhost:5218
+2024-03-03 15:55:18.416 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-03 15:55:18.418 +02:00 [INF] Hosting environment: Development
+2024-03-03 15:55:18.421 +02:00 [INF] Content root path: C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi
+2024-03-03 15:55:18.425 +02:00 [INF] Application Is Starting
+2024-03-03 15:55:19.442 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/index.html - null null
+2024-03-03 15:55:19.710 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/index.html - 200 null text/html;charset=utf-8 272.8547ms
+2024-03-03 15:55:19.729 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-03 15:55:19.754 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 25.1665ms
+2024-03-03 15:55:19.793 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_vs/browserLink - null null
+2024-03-03 15:55:19.851 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_vs/browserLink - 200 null text/javascript; charset=UTF-8 58.8925ms
+2024-03-03 15:55:19.915 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - null null
+2024-03-03 15:55:20.021 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 106.6765ms
+2024-03-03 15:55:29.211 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/api/Category - null null
+2024-03-03 15:55:29.235 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategories (BookXChangeApi)'
+2024-03-03 15:55:29.280 +02:00 [INF] Route matched with {action = "GetCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-03 15:55:31.590 +02:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Author`, `b`.`CategoryId`, `b`.`Title`
+FROM `Books` AS `b`
+2024-03-03 15:56:13.687 +02:00 [INF] Now listening on: https://localhost:7040
+2024-03-03 15:56:13.726 +02:00 [INF] Now listening on: http://localhost:5218
+2024-03-03 15:56:13.775 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-03 15:56:13.777 +02:00 [INF] Hosting environment: Development
+2024-03-03 15:56:13.779 +02:00 [INF] Content root path: C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi
+2024-03-03 15:56:13.781 +02:00 [INF] Application Is Starting
+2024-03-03 15:56:14.936 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/index.html - null null
+2024-03-03 15:56:15.339 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/index.html - 200 null text/html;charset=utf-8 413.5674ms
+2024-03-03 15:56:15.418 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-03 15:56:15.434 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_vs/browserLink - null null
+2024-03-03 15:56:15.453 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 35.4521ms
+2024-03-03 15:56:15.552 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_vs/browserLink - 200 null text/javascript; charset=UTF-8 117.9923ms
+2024-03-03 15:56:15.656 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - null null
+2024-03-03 15:56:15.859 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 207.0683ms
+2024-03-03 15:56:20.187 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/api/Category - null null
+2024-03-03 15:56:20.218 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategories (BookXChangeApi)'
+2024-03-03 15:56:20.268 +02:00 [INF] Route matched with {action = "GetCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-03 15:56:22.672 +02:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-03 15:57:34.814 +02:00 [INF] Now listening on: https://localhost:7040
+2024-03-03 15:57:34.871 +02:00 [INF] Now listening on: http://localhost:5218
+2024-03-03 15:57:34.939 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-03 15:57:34.942 +02:00 [INF] Hosting environment: Development
+2024-03-03 15:57:34.943 +02:00 [INF] Content root path: C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi
+2024-03-03 15:57:34.945 +02:00 [INF] Application Is Starting
+2024-03-03 15:57:35.697 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/index.html - null null
+2024-03-03 15:57:36.044 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/index.html - 200 null text/html;charset=utf-8 354.4328ms
+2024-03-03 15:57:36.093 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_vs/browserLink - null null
+2024-03-03 15:57:36.093 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-03 15:57:36.116 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 20.1032ms
+2024-03-03 15:57:36.175 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_vs/browserLink - 200 null text/javascript; charset=UTF-8 82.9596ms
+2024-03-03 15:57:36.233 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - null null
+2024-03-03 15:57:36.343 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 110.9452ms
+2024-03-03 15:57:40.659 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/api/Category - null null
+2024-03-03 15:57:40.693 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategories (BookXChangeApi)'
+2024-03-03 15:57:40.746 +02:00 [INF] Route matched with {action = "GetCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-03 15:57:43.400 +02:00 [INF] Executed DbCommand (56ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-03 15:57:43.528 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeApi.Models.Category, BookXChangeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-03 15:57:43.551 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategories (BookXChangeApi) in 2785.4834ms
+2024-03-03 15:57:43.555 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategories (BookXChangeApi)'
+2024-03-03 15:57:43.564 +02:00 [INF] HTTP GET /api/Category responded 200 in 2876.4667 ms
+2024-03-03 15:57:43.586 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/api/Category - 200 null application/json; charset=utf-8 2927.6204ms
+2024-03-03 16:08:07.917 +02:00 [INF] Now listening on: https://localhost:7040
+2024-03-03 16:08:07.954 +02:00 [INF] Now listening on: http://localhost:5218
+2024-03-03 16:08:07.990 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-03 16:08:07.992 +02:00 [INF] Hosting environment: Development
+2024-03-03 16:08:07.994 +02:00 [INF] Content root path: C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi
+2024-03-03 16:08:07.996 +02:00 [INF] Application Is Starting
+2024-03-03 16:08:08.912 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/index.html - null null
+2024-03-03 16:08:09.076 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/index.html - 200 null text/html;charset=utf-8 167.8683ms
+2024-03-03 16:08:09.151 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_vs/browserLink - null null
+2024-03-03 16:08:09.152 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-03 16:08:09.162 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 11.1302ms
+2024-03-03 16:08:09.199 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.4985ms
+2024-03-03 16:08:09.235 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - null null
+2024-03-03 16:08:09.303 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 68.5758ms
+2024-03-03 16:08:13.938 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/api/Category - null null
+2024-03-03 16:08:13.956 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategories (BookXChangeApi)'
+2024-03-03 16:08:13.975 +02:00 [INF] Route matched with {action = "GetCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-03 16:08:15.094 +02:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-03 16:08:15.227 +02:00 [ERR] Something went wrong in the GetCategories
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IList`1
+System.Collections.Generic.List`1[[BookXChangeApi.Models.Category, BookXChangeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IList`1[[BookXChangeApi.DTOs.BookDTO, BookXChangeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Category -> BookDTO
+BookXChangeApi.Models.Category -> BookXChangeApi.DTOs.BookDTO
+   at lambda_method35(Closure, Category, BookDTO, ResolutionContext)
+   at lambda_method34(Closure, Object, IList`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method34(Closure, Object, IList`1, ResolutionContext)
+   at BookXChangeApi.Controllers.CategoryController.GetCategories() in C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi\Controllers\CategoryController.cs:line 31
+2024-03-03 16:08:15.282 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2024-03-03 16:08:15.290 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategories (BookXChangeApi) in 1308.8242ms
+2024-03-03 16:08:15.292 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategories (BookXChangeApi)'
+2024-03-03 16:08:15.296 +02:00 [ERR] HTTP GET /api/Category responded 500 in 1341.9114 ms
+2024-03-03 16:08:15.309 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/api/Category - 500 null text/plain; charset=utf-8 1372.1499ms
+2024-03-03 16:08:40.379 +02:00 [INF] Now listening on: https://localhost:7040
+2024-03-03 16:08:40.405 +02:00 [INF] Now listening on: http://localhost:5218
+2024-03-03 16:08:40.445 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-03 16:08:40.448 +02:00 [INF] Hosting environment: Development
+2024-03-03 16:08:40.450 +02:00 [INF] Content root path: C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi
+2024-03-03 16:08:40.453 +02:00 [INF] Application Is Starting
+2024-03-03 16:08:41.339 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/index.html - null null
+2024-03-03 16:08:41.509 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/index.html - 200 null text/html;charset=utf-8 173.5812ms
+2024-03-03 16:08:41.523 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-03 16:08:41.532 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 8.916ms
+2024-03-03 16:08:41.556 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_vs/browserLink - null null
+2024-03-03 16:08:41.592 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_vs/browserLink - 200 null text/javascript; charset=UTF-8 35.4672ms
+2024-03-03 16:08:41.678 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - null null
+2024-03-03 16:08:41.746 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 67.9376ms
+2024-03-03 16:08:46.209 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/api/Category - null null
+2024-03-03 16:08:46.223 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategories (BookXChangeApi)'
+2024-03-03 16:08:46.242 +02:00 [INF] Route matched with {action = "GetCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-03 16:08:47.249 +02:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-03 16:08:47.323 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeApi.Models.Category, BookXChangeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-03 16:08:47.336 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategories (BookXChangeApi) in 1087.9665ms
+2024-03-03 16:08:47.340 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategories (BookXChangeApi)'
+2024-03-03 16:08:47.345 +02:00 [INF] HTTP GET /api/Category responded 200 in 1122.7534 ms
+2024-03-03 16:08:47.356 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/api/Category - 200 null application/json; charset=utf-8 1146.8345ms
+2024-03-03 16:13:30.755 +02:00 [INF] Now listening on: https://localhost:7040
+2024-03-03 16:13:30.788 +02:00 [INF] Now listening on: http://localhost:5218
+2024-03-03 16:13:30.843 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-03 16:13:30.851 +02:00 [INF] Hosting environment: Development
+2024-03-03 16:13:30.852 +02:00 [INF] Content root path: C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi
+2024-03-03 16:13:30.853 +02:00 [INF] Application Is Starting
+2024-03-03 16:13:31.429 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/index.html - null null
+2024-03-03 16:13:31.636 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/index.html - 200 null text/html;charset=utf-8 215.4334ms
+2024-03-03 16:13:31.692 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-03 16:13:31.693 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_vs/browserLink - null null
+2024-03-03 16:13:31.747 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 60.6218ms
+2024-03-03 16:13:31.780 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_vs/browserLink - 200 null text/javascript; charset=UTF-8 87.2913ms
+2024-03-03 16:13:31.822 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - null null
+2024-03-03 16:13:31.894 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 71.3709ms
+2024-03-03 16:13:37.481 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/api/Category - null null
+2024-03-03 16:13:37.500 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategories (BookXChangeApi)'
+2024-03-03 16:13:37.543 +02:00 [INF] Route matched with {action = "GetCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-03 16:13:38.819 +02:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-03 16:13:38.870 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeApi.Models.Category, BookXChangeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-03 16:13:39.088 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategories (BookXChangeApi) in 1534.9393ms
+2024-03-03 16:13:39.091 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategories (BookXChangeApi)'
+2024-03-03 16:13:39.097 +02:00 [INF] HTTP GET /api/Category responded 200 in 1601.9541 ms
+2024-03-03 16:13:39.109 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/api/Category - 200 130 application/json; charset=utf-8 1628.5599ms
+2024-03-03 16:17:35.360 +02:00 [INF] Now listening on: https://localhost:7040
+2024-03-03 16:17:35.391 +02:00 [INF] Now listening on: http://localhost:5218
+2024-03-03 16:17:35.442 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-03 16:17:35.444 +02:00 [INF] Hosting environment: Development
+2024-03-03 16:17:35.445 +02:00 [INF] Content root path: C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi
+2024-03-03 16:17:35.447 +02:00 [INF] Application Is Starting
+2024-03-03 16:17:36.307 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/index.html - null null
+2024-03-03 16:17:36.473 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/index.html - 200 null text/html;charset=utf-8 176.7009ms
+2024-03-03 16:17:36.505 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_vs/browserLink - null null
+2024-03-03 16:17:36.505 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-03 16:17:36.515 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 7.8238ms
+2024-03-03 16:17:36.557 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.6567ms
+2024-03-03 16:17:36.603 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - null null
+2024-03-03 16:17:36.702 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 99.3947ms
+2024-03-03 16:18:24.278 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/api/Category - null null
+2024-03-03 16:18:24.296 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategories (BookXChangeApi)'
+2024-03-03 16:18:24.315 +02:00 [INF] Route matched with {action = "GetCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-03 16:18:25.469 +02:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-03 16:18:25.559 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeApi.DTOs.CategoryDTO, BookXChangeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-03 16:18:25.677 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategories (BookXChangeApi) in 1354.4588ms
+2024-03-03 16:18:25.682 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategories (BookXChangeApi)'
+2024-03-03 16:18:25.686 +02:00 [INF] HTTP GET /api/Category responded 200 in 1391.4792 ms
+2024-03-03 16:18:25.693 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/api/Category - 200 124 application/json; charset=utf-8 1414.6261ms
+2024-03-03 16:18:53.393 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/api/Category/1 - null null
+2024-03-03 16:18:53.407 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-03 16:18:53.420 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategory(Int32) on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-03 16:18:53.747 +02:00 [INF] Executed DbCommand (40ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Name`, `b`.`Id`, `b`.`Author`, `b`.`CategoryId`, `b`.`Title`
+FROM (
+    SELECT `c`.`Id`, `c`.`Name`
+    FROM `Categories` AS `c`
+    WHERE `c`.`Id` = @__id_0
+    LIMIT 1
+) AS `t`
+LEFT JOIN `Books` AS `b` ON `t`.`Id` = `b`.`CategoryId`
+ORDER BY `t`.`Id`
+2024-03-03 16:18:53.777 +02:00 [INF] Executing OkObjectResult, writing value of type 'BookXChangeApi.DTOs.CategoryDTO'.
+2024-03-03 16:18:53.782 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 358.3114ms
+2024-03-03 16:18:53.786 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-03 16:18:53.788 +02:00 [INF] HTTP GET /api/Category/1 responded 200 in 380.9228 ms
+2024-03-03 16:18:53.790 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/api/Category/1 - 200 157 application/json; charset=utf-8 397.6968ms
+2024-03-03 16:21:36.945 +02:00 [INF] Now listening on: https://localhost:7040
+2024-03-03 16:21:36.980 +02:00 [INF] Now listening on: http://localhost:5218
+2024-03-03 16:21:37.036 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-03 16:21:37.039 +02:00 [INF] Hosting environment: Development
+2024-03-03 16:21:37.043 +02:00 [INF] Content root path: C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi
+2024-03-03 16:21:37.046 +02:00 [INF] Application Is Starting
+2024-03-03 16:21:37.871 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/index.html - null null
+2024-03-03 16:21:38.072 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/index.html - 200 null text/html;charset=utf-8 206.3781ms
+2024-03-03 16:21:38.097 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_vs/browserLink - null null
+2024-03-03 16:21:38.097 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-03 16:21:38.116 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 19.7795ms
+2024-03-03 16:21:38.156 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.9331ms
+2024-03-03 16:21:38.224 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - null null
+2024-03-03 16:21:38.298 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 73.9924ms
+2024-03-03 16:21:44.306 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/api/Category - null null
+2024-03-03 16:21:44.318 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategories (BookXChangeApi)'
+2024-03-03 16:21:44.341 +02:00 [INF] Route matched with {action = "GetCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-03 16:21:45.563 +02:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`, `b`.`Id`, `b`.`Author`, `b`.`CategoryId`, `b`.`Title`
+FROM `Categories` AS `c`
+LEFT JOIN `Books` AS `b` ON `c`.`Id` = `b`.`CategoryId`
+ORDER BY `c`.`Id`
+2024-03-03 16:21:45.652 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeApi.DTOs.CategoryDTO, BookXChangeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-03 16:21:45.782 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategories (BookXChangeApi) in 1431.1409ms
+2024-03-03 16:21:45.784 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategories (BookXChangeApi)'
+2024-03-03 16:21:45.788 +02:00 [INF] HTTP GET /api/Category responded 200 in 1471.7463 ms
+2024-03-03 16:21:45.797 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/api/Category - 200 426 application/json; charset=utf-8 1492.6536ms
+2024-03-03 16:48:21.805 +02:00 [INF] Now listening on: https://localhost:7040
+2024-03-03 16:48:21.837 +02:00 [INF] Now listening on: http://localhost:5218
+2024-03-03 16:48:21.912 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-03 16:48:21.913 +02:00 [INF] Hosting environment: Development
+2024-03-03 16:48:21.914 +02:00 [INF] Content root path: C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi
+2024-03-03 16:48:21.915 +02:00 [INF] Application Is Starting
+2024-03-03 16:48:22.574 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/index.html - null null
+2024-03-03 16:48:22.807 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/index.html - 200 null text/html;charset=utf-8 236.9266ms
+2024-03-03 16:48:22.817 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-03 16:48:22.833 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 16.3254ms
+2024-03-03 16:48:22.841 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_vs/browserLink - null null
+2024-03-03 16:48:22.935 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_vs/browserLink - 200 null text/javascript; charset=UTF-8 94.4127ms
+2024-03-03 16:48:22.990 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - null null
+2024-03-03 16:48:23.087 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 97.6551ms
+2024-03-03 16:48:51.243 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/api/Book/1 - null null
+2024-03-03 16:48:51.266 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBook (BookXChangeApi)'
+2024-03-03 16:48:51.307 +02:00 [INF] Route matched with {action = "GetBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBook(Int32) on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-03 16:48:52.640 +02:00 [INF] Executed DbCommand (41ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Author`, `b`.`CategoryId`, `b`.`Title`, `c`.`Id`, `c`.`Name`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+WHERE `b`.`Id` = @__id_0
+LIMIT 1
+2024-03-03 16:48:52.725 +02:00 [INF] Executing OkObjectResult, writing value of type 'BookXChangeApi.DTOs.BookDTO'.
+2024-03-03 16:48:52.850 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBook (BookXChangeApi) in 1534.2881ms
+2024-03-03 16:48:52.854 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBook (BookXChangeApi)'
+2024-03-03 16:48:52.857 +02:00 [INF] HTTP GET /api/Book/1 responded 200 in 1593.7005 ms
+2024-03-03 16:48:52.869 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/api/Book/1 - 200 108 application/json; charset=utf-8 1626.4617ms
+2024-03-03 16:53:52.338 +02:00 [INF] Now listening on: https://localhost:7040
+2024-03-03 16:53:52.365 +02:00 [INF] Now listening on: http://localhost:5218
+2024-03-03 16:53:52.397 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-03 16:53:52.400 +02:00 [INF] Hosting environment: Development
+2024-03-03 16:53:52.403 +02:00 [INF] Content root path: C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi
+2024-03-03 16:53:52.406 +02:00 [INF] Application Is Starting
+2024-03-03 16:53:53.242 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/index.html - null null
+2024-03-03 16:53:53.438 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/index.html - 200 null text/html;charset=utf-8 199.9645ms
+2024-03-03 16:53:53.505 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-03 16:53:53.505 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_vs/browserLink - null null
+2024-03-03 16:53:53.514 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 8.8573ms
+2024-03-03 16:53:53.547 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.6823ms
+2024-03-03 16:53:53.583 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - null null
+2024-03-03 16:53:53.649 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 65.8122ms
+2024-03-03 16:54:01.657 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/api/Book/1 - null null
+2024-03-03 16:54:01.677 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBook (BookXChangeApi)'
+2024-03-03 16:54:01.715 +02:00 [INF] Route matched with {action = "GetBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBook(Int32) on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-03 16:54:03.142 +02:00 [INF] Executed DbCommand (35ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Author`, `b`.`CategoryId`, `b`.`Title`, `c`.`Id`, `c`.`Name`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+WHERE `b`.`Id` = @__id_0
+LIMIT 1
+2024-03-03 16:54:03.209 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-03 16:54:03.348 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBook (BookXChangeApi) in 1623.3551ms
+2024-03-03 16:54:03.352 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBook (BookXChangeApi)'
+2024-03-03 16:54:03.359 +02:00 [INF] HTTP GET /api/Book/1 responded 200 in 1685.1987 ms
+2024-03-03 16:54:03.372 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/api/Book/1 - 200 85 application/json; charset=utf-8 1716.6167ms
+2024-03-03 16:55:39.789 +02:00 [INF] Now listening on: https://localhost:7040
+2024-03-03 16:55:39.824 +02:00 [INF] Now listening on: http://localhost:5218
+2024-03-03 16:55:39.872 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-03 16:55:39.874 +02:00 [INF] Hosting environment: Development
+2024-03-03 16:55:39.878 +02:00 [INF] Content root path: C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi
+2024-03-03 16:55:39.879 +02:00 [INF] Application Is Starting
+2024-03-03 16:55:40.624 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/index.html - null null
+2024-03-03 16:55:40.788 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/index.html - 200 null text/html;charset=utf-8 170.2229ms
+2024-03-03 16:55:40.823 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-03 16:55:40.823 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_vs/browserLink - null null
+2024-03-03 16:55:40.843 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 20.1851ms
+2024-03-03 16:55:40.918 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_vs/browserLink - 200 null text/javascript; charset=UTF-8 94.7269ms
+2024-03-03 16:55:41.075 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - null null
+2024-03-03 16:55:41.200 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 126.4523ms
+2024-03-03 17:16:05.448 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Books - null null
+2024-03-03 17:16:05.464 +02:00 [INF] HTTP GET /api/Books responded 404 in 1.8232 ms
+2024-03-03 17:16:05.481 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Books - 404 0 null 33.0482ms
+2024-03-03 17:16:05.490 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7040/api/Books, Response status code: 404
+2024-03-03 17:16:11.476 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Books - null null
+2024-03-03 17:16:11.481 +02:00 [INF] HTTP GET /api/Books responded 404 in 0.2858 ms
+2024-03-03 17:16:11.484 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Books - 404 0 null 8.3414ms
+2024-03-03 17:16:11.487 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7040/api/Books, Response status code: 404
+2024-03-03 17:16:30.057 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Books - null null
+2024-03-03 17:16:30.061 +02:00 [INF] HTTP GET /api/Books responded 404 in 0.2578 ms
+2024-03-03 17:16:30.064 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Books - 404 0 null 6.8377ms
+2024-03-03 17:16:30.068 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7040/api/Books, Response status code: 404
+2024-03-03 17:17:02.616 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Books - null null
+2024-03-03 17:17:02.622 +02:00 [INF] HTTP GET /api/Books responded 404 in 0.0417 ms
+2024-03-03 17:17:02.623 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Books - 404 0 null 7.1366ms
+2024-03-03 17:17:02.625 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7040/api/Books, Response status code: 404
+2024-03-03 17:17:14.120 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Books - null null
+2024-03-03 17:17:14.130 +02:00 [INF] HTTP GET /api/Books responded 404 in 0.0260 ms
+2024-03-03 17:17:14.131 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Books - 404 0 null 12.4466ms
+2024-03-03 17:17:14.134 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7040/api/Books, Response status code: 404
+2024-03-03 17:21:17.745 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Books - null null
+2024-03-03 17:21:17.747 +02:00 [INF] HTTP GET /api/Books responded 404 in 0.0327 ms
+2024-03-03 17:21:17.748 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Books - 404 0 null 3.3305ms
+2024-03-03 17:21:17.750 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7040/api/Books, Response status code: 404
+2024-03-03 17:25:24.706 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/api/Book/1 - null null
+2024-03-03 17:25:24.719 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBook (BookXChangeApi)'
+2024-03-03 17:25:24.746 +02:00 [INF] Route matched with {action = "GetBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBook(Int32) on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-03 17:25:25.826 +02:00 [INF] Executed DbCommand (34ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Author`, `b`.`CategoryId`, `b`.`Title`, `c`.`Id`, `c`.`Name`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+WHERE `b`.`Id` = @__id_0
+LIMIT 1
+2024-03-03 17:25:25.884 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-03 17:25:26.007 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBook (BookXChangeApi) in 1252.276ms
+2024-03-03 17:25:26.014 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBook (BookXChangeApi)'
+2024-03-03 17:25:26.019 +02:00 [INF] HTTP GET /api/Book/1 responded 200 in 1301.9446 ms
+2024-03-03 17:25:26.026 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/api/Book/1 - 200 85 application/json; charset=utf-8 1320.0665ms
+2024-03-03 17:30:11.530 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-03 17:30:11.536 +02:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2024-03-03 17:30:11.537 +02:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2024-03-03 17:30:11.537 +02:00 [INF] HTTP GET /api/Book responded 405 in 1.3907 ms
+2024-03-03 17:30:11.539 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 405 0 null 9.2555ms
+2024-03-03 17:30:19.389 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-03 17:30:19.394 +02:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2024-03-03 17:30:19.395 +02:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2024-03-03 17:30:19.397 +02:00 [INF] HTTP GET /api/Book responded 405 in 3.1201 ms
+2024-03-03 17:30:19.398 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 405 0 null 9.3431ms
+2024-03-03 17:31:33.135 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-03 17:31:33.141 +02:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2024-03-03 17:31:33.141 +02:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2024-03-03 17:31:33.142 +02:00 [INF] HTTP GET /api/Book responded 405 in 1.2676 ms
+2024-03-03 17:31:33.144 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 405 0 null 8.2604ms
+2024-03-03 17:33:47.438 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-03 17:33:47.446 +02:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2024-03-03 17:33:47.446 +02:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2024-03-03 17:33:47.447 +02:00 [INF] HTTP GET /api/Book responded 405 in 1.4179 ms
+2024-03-03 17:33:47.448 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 405 0 null 10.3047ms
+2024-03-03 17:35:36.649 +02:00 [INF] Now listening on: https://localhost:7040
+2024-03-03 17:35:36.682 +02:00 [INF] Now listening on: http://localhost:5218
+2024-03-03 17:35:36.730 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-03 17:35:36.732 +02:00 [INF] Hosting environment: Development
+2024-03-03 17:35:36.734 +02:00 [INF] Content root path: C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi
+2024-03-03 17:35:36.736 +02:00 [INF] Application Is Starting
+2024-03-03 17:35:37.324 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/index.html - null null
+2024-03-03 17:35:37.501 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/index.html - 200 null text/html;charset=utf-8 178.9069ms
+2024-03-03 17:35:37.518 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_vs/browserLink - null null
+2024-03-03 17:35:37.518 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-03 17:35:37.537 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 18.2525ms
+2024-03-03 17:35:37.569 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.1721ms
+2024-03-03 17:35:37.606 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - null null
+2024-03-03 17:35:37.679 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 73.0189ms
+2024-03-03 17:35:47.167 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/api/Book - null null
+2024-03-03 17:35:47.189 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-03 17:35:47.224 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-03 17:35:48.483 +02:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Author`, `b`.`CategoryId`, `b`.`Title`
+FROM `Books` AS `b`
+2024-03-03 17:35:48.597 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeApi.DTOs.BookDTO, BookXChangeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-03 17:35:48.735 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 1503.5321ms
+2024-03-03 17:35:48.740 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-03 17:35:48.743 +02:00 [INF] HTTP GET /api/Book responded 200 in 1561.3508 ms
+2024-03-03 17:35:48.751 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/api/Book - 200 386 application/json; charset=utf-8 1584.5491ms
+2024-03-03 17:36:10.961 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-03 17:36:10.964 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-03 17:36:10.965 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-03 17:36:11.038 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Author`, `b`.`CategoryId`, `b`.`Title`
+FROM `Books` AS `b`
+2024-03-03 17:36:11.043 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeApi.DTOs.BookDTO, BookXChangeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-03 17:36:11.047 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 81.5395ms
+2024-03-03 17:36:11.049 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-03 17:36:11.051 +02:00 [INF] HTTP GET /api/Book responded 200 in 87.8161 ms
+2024-03-03 17:36:11.055 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 386 application/json; charset=utf-8 94.4121ms
+2024-03-03 17:55:44.281 +02:00 [INF] Now listening on: https://localhost:7040
+2024-03-03 17:55:44.308 +02:00 [INF] Now listening on: http://localhost:5218
+2024-03-03 17:55:44.352 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-03 17:55:44.355 +02:00 [INF] Hosting environment: Development
+2024-03-03 17:55:44.356 +02:00 [INF] Content root path: C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi
+2024-03-03 17:55:44.358 +02:00 [INF] Application Is Starting
+2024-03-03 17:55:44.963 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/index.html - null null
+2024-03-03 17:55:45.120 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/index.html - 200 null text/html;charset=utf-8 158.8365ms
+2024-03-03 17:55:45.128 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-03 17:55:45.131 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_vs/browserLink - null null
+2024-03-03 17:55:45.136 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 8.2651ms
+2024-03-03 17:55:45.178 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.2475ms
+2024-03-03 17:55:45.225 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - null null
+2024-03-03 17:55:45.314 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 89.5513ms
+2024-03-03 17:55:51.597 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-03 17:55:51.620 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-03 17:55:51.639 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-03 17:55:52.811 +02:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Author`, `b`.`CategoryId`, `b`.`Title`
+FROM `Books` AS `b`
+2024-03-03 17:55:52.904 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeApi.DTOs.BookDTO, BookXChangeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-03 17:55:53.036 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 1391.0716ms
+2024-03-03 17:55:53.039 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-03 17:55:53.042 +02:00 [INF] HTTP GET /api/Book responded 200 in 1426.8354 ms
+2024-03-03 17:55:53.052 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 386 application/json; charset=utf-8 1454.8766ms
+2024-03-03 17:56:12.793 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/api/Book - null null
+2024-03-03 17:56:12.802 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-03 17:56:12.805 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-03 17:56:12.895 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Author`, `b`.`CategoryId`, `b`.`Title`
+FROM `Books` AS `b`
+2024-03-03 17:56:12.904 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeApi.DTOs.BookDTO, BookXChangeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-03 17:56:12.908 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 100.5206ms
+2024-03-03 17:56:12.912 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-03 17:56:12.913 +02:00 [INF] HTTP GET /api/Book responded 200 in 112.6554 ms
+2024-03-03 17:56:12.918 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/api/Book - 200 386 application/json; charset=utf-8 125.5783ms
+2024-03-03 18:06:29.602 +02:00 [INF] Now listening on: https://localhost:7040
+2024-03-03 18:06:29.630 +02:00 [INF] Now listening on: http://localhost:5218
+2024-03-03 18:06:29.676 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-03 18:06:29.680 +02:00 [INF] Hosting environment: Development
+2024-03-03 18:06:29.683 +02:00 [INF] Content root path: C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi
+2024-03-03 18:06:29.686 +02:00 [INF] Application Is Starting
+2024-03-03 18:06:30.008 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/index.html - null null
+2024-03-03 18:06:30.172 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/index.html - 200 null text/html;charset=utf-8 168.0882ms
+2024-03-03 18:06:30.189 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_vs/browserLink - null null
+2024-03-03 18:06:30.189 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-03 18:06:30.203 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 14.4338ms
+2024-03-03 18:06:30.239 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.0671ms
+2024-03-03 18:06:30.297 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - null null
+2024-03-03 18:06:30.385 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 88.4267ms
+2024-03-03 18:06:33.999 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/api/Book - null null
+2024-03-03 18:06:34.013 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-03 18:06:34.031 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-03 18:06:34.966 +02:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Author`, `b`.`CategoryId`, `b`.`Title`, `c`.`Id`, `c`.`Name`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-03 18:06:35.031 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeApi.DTOs.BookDTO, BookXChangeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-03 18:06:35.134 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 1092.2604ms
+2024-03-03 18:06:35.140 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-03 18:06:35.143 +02:00 [INF] HTTP GET /api/Book responded 200 in 1130.3095 ms
+2024-03-03 18:06:35.149 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/api/Book - 200 572 application/json; charset=utf-8 1149.5737ms
+2024-03-03 18:09:17.069 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-03 18:09:17.076 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-03 18:09:17.078 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-03 18:09:17.172 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Author`, `b`.`CategoryId`, `b`.`Title`, `c`.`Id`, `c`.`Name`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-03 18:09:17.179 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeApi.DTOs.BookDTO, BookXChangeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-03 18:09:17.184 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 102.7223ms
+2024-03-03 18:09:17.186 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-03 18:09:17.188 +02:00 [INF] HTTP GET /api/Book responded 200 in 112.3264 ms
+2024-03-03 18:09:17.192 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 572 application/json; charset=utf-8 123.3073ms
+2024-03-03 18:09:44.203 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-03 18:09:44.212 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-03 18:09:44.214 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-03 18:09:44.250 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Author`, `b`.`CategoryId`, `b`.`Title`, `c`.`Id`, `c`.`Name`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-03 18:09:44.253 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeApi.DTOs.BookDTO, BookXChangeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-03 18:09:44.257 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 39.4227ms
+2024-03-03 18:09:44.261 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-03 18:09:44.262 +02:00 [INF] HTTP GET /api/Book responded 200 in 51.4558 ms
+2024-03-03 18:09:44.264 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 572 application/json; charset=utf-8 61.5777ms

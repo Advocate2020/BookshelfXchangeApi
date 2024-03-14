@@ -1,0 +1,682 @@
+2024-03-12 19:09:11.008 +02:00 [INF] Now listening on: https://localhost:7040
+2024-03-12 19:09:11.057 +02:00 [INF] Now listening on: http://localhost:5218
+2024-03-12 19:09:11.108 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-12 19:09:11.110 +02:00 [INF] Hosting environment: Development
+2024-03-12 19:09:11.112 +02:00 [INF] Content root path: C:\Users\SAKHANYA\Documents\Upskilling\BookXChangeApi
+2024-03-12 19:09:11.113 +02:00 [INF] Application Is Starting
+2024-03-12 19:09:11.660 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/index.html - null null
+2024-03-12 19:09:11.860 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/index.html - 200 null text/html;charset=utf-8 209.6673ms
+2024-03-12 19:09:11.871 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-12 19:09:11.875 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/_vs/browserLink - null null
+2024-03-12 19:09:11.884 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 13.7271ms
+2024-03-12 19:09:11.928 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.7525ms
+2024-03-12 19:09:11.974 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - null null
+2024-03-12 19:09:12.073 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7040/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 99.7026ms
+2024-03-12 19:10:27.290 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 19:10:27.302 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:10:27.322 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 19:10:28.534 +02:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 19:10:28.595 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:10:28.815 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 1485.8454ms
+2024-03-12 19:10:28.817 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:10:28.820 +02:00 [INF] HTTP GET /api/Book responded 200 in 1519.2725 ms
+2024-03-12 19:10:28.831 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 1541.1932ms
+2024-03-12 19:10:29.615 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 19:10:29.621 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:10:29.623 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 19:10:29.653 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 19:10:29.657 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:10:29.659 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 33.6021ms
+2024-03-12 19:10:29.661 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:10:29.663 +02:00 [INF] HTTP GET /api/Book responded 200 in 42.0326 ms
+2024-03-12 19:10:29.665 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 49.8426ms
+2024-03-12 19:12:45.403 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 19:12:45.414 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:12:45.416 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 19:12:45.475 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 19:12:45.483 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:12:45.485 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 65.7926ms
+2024-03-12 19:12:45.487 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:12:45.488 +02:00 [INF] HTTP GET /api/Book responded 200 in 74.8251 ms
+2024-03-12 19:12:45.491 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 87.1222ms
+2024-03-12 19:12:46.315 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 19:12:46.338 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:12:46.343 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 19:12:46.358 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 19:12:46.366 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:12:46.369 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 19.2479ms
+2024-03-12 19:12:46.371 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:12:46.372 +02:00 [INF] HTTP GET /api/Book responded 200 in 33.5714 ms
+2024-03-12 19:12:46.375 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 59.17ms
+2024-03-12 19:17:26.528 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 19:17:26.534 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:17:26.537 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 19:17:26.583 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 19:17:26.589 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:17:26.592 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 50.8515ms
+2024-03-12 19:17:26.594 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:17:26.595 +02:00 [INF] HTTP GET /api/Book responded 200 in 61.1500 ms
+2024-03-12 19:17:26.597 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 69.3743ms
+2024-03-12 19:17:27.594 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 19:17:27.601 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:17:27.603 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 19:17:27.617 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 19:17:27.631 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:17:27.633 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 23.3615ms
+2024-03-12 19:17:27.636 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:17:27.638 +02:00 [INF] HTTP GET /api/Book responded 200 in 37.0954 ms
+2024-03-12 19:17:27.640 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 46.6488ms
+2024-03-12 19:20:44.260 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 19:20:44.269 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:20:44.270 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 19:20:44.293 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 19:20:44.303 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:20:44.310 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 37.6758ms
+2024-03-12 19:20:44.315 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:20:44.320 +02:00 [INF] HTTP GET /api/Book responded 200 in 51.0904 ms
+2024-03-12 19:20:44.326 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 66.2288ms
+2024-03-12 19:20:45.065 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 19:20:45.069 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:20:45.073 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 19:20:45.082 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 19:20:45.092 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:20:45.095 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 18.5502ms
+2024-03-12 19:20:45.096 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:20:45.097 +02:00 [INF] HTTP GET /api/Book responded 200 in 27.8853 ms
+2024-03-12 19:20:45.101 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 35.9159ms
+2024-03-12 19:23:44.992 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 19:23:45.003 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:23:45.008 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 19:23:45.031 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 19:23:45.052 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:23:45.055 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 38.9595ms
+2024-03-12 19:23:45.056 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:23:45.058 +02:00 [INF] HTTP GET /api/Book responded 200 in 55.0815 ms
+2024-03-12 19:23:45.063 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 70.3834ms
+2024-03-12 19:23:46.252 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 19:23:46.254 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:23:46.257 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 19:23:46.266 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 19:23:46.269 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:23:46.274 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 15.3929ms
+2024-03-12 19:23:46.276 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:23:46.278 +02:00 [INF] HTTP GET /api/Book responded 200 in 23.6336 ms
+2024-03-12 19:23:46.282 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 30.7664ms
+2024-03-12 19:24:15.358 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 19:24:15.362 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:24:15.363 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 19:24:15.378 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 19:24:15.381 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:24:15.382 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 17.0568ms
+2024-03-12 19:24:15.384 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:24:15.385 +02:00 [INF] HTTP GET /api/Book responded 200 in 22.7963 ms
+2024-03-12 19:24:15.387 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 28.8318ms
+2024-03-12 19:24:16.265 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 19:24:16.279 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:24:16.283 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 19:24:16.300 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 19:24:16.311 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:24:16.315 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 23.6344ms
+2024-03-12 19:24:16.316 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:24:16.318 +02:00 [INF] HTTP GET /api/Book responded 200 in 39.4279 ms
+2024-03-12 19:24:16.320 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 55.2292ms
+2024-03-12 19:24:40.729 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 19:24:40.739 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:24:40.743 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 19:24:40.758 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 19:24:40.769 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:24:40.773 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 24.9822ms
+2024-03-12 19:24:40.775 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:24:40.777 +02:00 [INF] HTTP GET /api/Book responded 200 in 37.6967 ms
+2024-03-12 19:24:40.785 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 56.0651ms
+2024-03-12 19:24:41.537 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 19:24:41.540 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:24:41.541 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 19:24:41.550 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 19:24:41.553 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:24:41.554 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 11.0555ms
+2024-03-12 19:24:41.557 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:24:41.559 +02:00 [INF] HTTP GET /api/Book responded 200 in 18.8059 ms
+2024-03-12 19:24:41.563 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 26.6454ms
+2024-03-12 19:25:35.619 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Category - null null
+2024-03-12 19:25:35.630 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:25:35.641 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetCategoryDTO]]] GetCategory() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-12 19:25:35.661 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-12 19:25:35.676 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetCategoryDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:25:35.680 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 31.0913ms
+2024-03-12 19:25:35.682 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:25:35.683 +02:00 [INF] HTTP GET /api/Category responded 200 in 52.2552 ms
+2024-03-12 19:25:35.685 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Category - 200 269 application/json; charset=utf-8 66.4732ms
+2024-03-12 19:25:35.790 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Category - null null
+2024-03-12 19:25:35.796 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:25:35.798 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetCategoryDTO]]] GetCategory() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-12 19:25:35.810 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-12 19:25:35.813 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetCategoryDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:25:35.816 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 14.8788ms
+2024-03-12 19:25:35.819 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:25:35.820 +02:00 [INF] HTTP GET /api/Category responded 200 in 24.2492 ms
+2024-03-12 19:25:35.824 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Category - 200 269 application/json; charset=utf-8 34.3422ms
+2024-03-12 19:32:41.643 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 19:32:41.650 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:32:41.652 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 19:32:41.682 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 19:32:41.690 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:32:41.696 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 41.7965ms
+2024-03-12 19:32:41.702 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:32:41.707 +02:00 [INF] HTTP GET /api/Book responded 200 in 56.6220 ms
+2024-03-12 19:32:41.712 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 69.6296ms
+2024-03-12 19:32:42.504 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 19:32:42.524 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:32:42.530 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 19:32:42.537 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 19:32:42.540 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:32:42.542 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 11.3603ms
+2024-03-12 19:32:42.544 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:32:42.544 +02:00 [INF] HTTP GET /api/Book responded 200 in 20.2929 ms
+2024-03-12 19:32:42.546 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 43.5986ms
+2024-03-12 19:32:43.968 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Category - null null
+2024-03-12 19:32:43.976 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:32:43.979 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetCategoryDTO]]] GetCategory() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-12 19:32:43.994 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-12 19:32:44.000 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetCategoryDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:32:44.005 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 19.1462ms
+2024-03-12 19:32:44.007 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:32:44.009 +02:00 [INF] HTTP GET /api/Category responded 200 in 32.2936 ms
+2024-03-12 19:32:44.012 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Category - 200 269 application/json; charset=utf-8 44.0729ms
+2024-03-12 19:32:44.063 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Category - null null
+2024-03-12 19:32:44.068 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:32:44.070 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetCategoryDTO]]] GetCategory() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-12 19:32:44.081 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-12 19:32:44.086 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetCategoryDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:32:44.087 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 13.9246ms
+2024-03-12 19:32:44.089 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:32:44.091 +02:00 [INF] HTTP GET /api/Category responded 200 in 22.8068 ms
+2024-03-12 19:32:44.093 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Category - 200 269 application/json; charset=utf-8 29.6333ms
+2024-03-12 19:34:02.084 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Category - null null
+2024-03-12 19:34:02.089 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:34:02.091 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetCategoryDTO]]] GetCategory() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-12 19:34:02.104 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-12 19:34:02.120 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetCategoryDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:34:02.122 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 25.5146ms
+2024-03-12 19:34:02.124 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:34:02.126 +02:00 [INF] HTTP GET /api/Category responded 200 in 36.8577 ms
+2024-03-12 19:34:02.129 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Category - 200 269 application/json; charset=utf-8 47.7282ms
+2024-03-12 19:34:02.813 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Category - null null
+2024-03-12 19:34:02.820 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:34:02.824 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetCategoryDTO]]] GetCategory() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-12 19:34:02.843 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-12 19:34:02.850 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetCategoryDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:34:02.855 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 24.3433ms
+2024-03-12 19:34:02.858 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:34:02.860 +02:00 [INF] HTTP GET /api/Category responded 200 in 39.7232 ms
+2024-03-12 19:34:02.864 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Category - 200 269 application/json; charset=utf-8 51.0116ms
+2024-03-12 19:35:36.587 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 19:35:36.590 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:35:36.592 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 19:35:36.613 +02:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 19:35:36.615 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:35:36.617 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 22.9547ms
+2024-03-12 19:35:36.618 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:35:36.619 +02:00 [INF] HTTP GET /api/Book responded 200 in 28.6546 ms
+2024-03-12 19:35:36.621 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 33.892ms
+2024-03-12 19:35:37.416 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 19:35:37.426 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:35:37.429 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 19:35:37.439 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 19:35:37.442 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:35:37.444 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 11.831ms
+2024-03-12 19:35:37.445 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:35:37.447 +02:00 [INF] HTTP GET /api/Book responded 200 in 20.2518 ms
+2024-03-12 19:35:37.450 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 33.6947ms
+2024-03-12 19:35:39.386 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Category - null null
+2024-03-12 19:35:39.391 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:35:39.395 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetCategoryDTO]]] GetCategory() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-12 19:35:39.406 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-12 19:35:39.424 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetCategoryDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:35:39.429 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 31.1513ms
+2024-03-12 19:35:39.432 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:35:39.436 +02:00 [INF] HTTP GET /api/Category responded 200 in 44.6319 ms
+2024-03-12 19:35:39.440 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Category - 200 269 application/json; charset=utf-8 53.7352ms
+2024-03-12 19:35:39.526 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Category - null null
+2024-03-12 19:35:39.533 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:35:39.542 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetCategoryDTO]]] GetCategory() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-12 19:35:39.549 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-12 19:35:39.558 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetCategoryDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:35:39.565 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 20.7815ms
+2024-03-12 19:35:39.572 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:35:39.575 +02:00 [INF] HTTP GET /api/Category responded 200 in 42.0202 ms
+2024-03-12 19:35:39.580 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Category - 200 269 application/json; charset=utf-8 53.7766ms
+2024-03-12 19:40:45.967 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 19:40:45.970 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:40:45.975 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 19:40:46.014 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 19:40:46.021 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:40:46.026 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 43.9324ms
+2024-03-12 19:40:46.027 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:40:46.029 +02:00 [INF] HTTP GET /api/Book responded 200 in 58.2169 ms
+2024-03-12 19:40:46.031 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 64.1001ms
+2024-03-12 19:40:46.842 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 19:40:46.849 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:40:46.851 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 19:40:46.858 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 19:40:46.861 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:40:46.863 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 10.9356ms
+2024-03-12 19:40:46.864 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:40:46.865 +02:00 [INF] HTTP GET /api/Book responded 200 in 15.8789 ms
+2024-03-12 19:40:46.867 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 26.7808ms
+2024-03-12 19:40:47.693 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Category - null null
+2024-03-12 19:40:47.703 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:40:47.710 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetCategoryDTO]]] GetCategory() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-12 19:40:47.726 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-12 19:40:47.733 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetCategoryDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:40:47.737 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 21.3214ms
+2024-03-12 19:40:47.741 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:40:47.745 +02:00 [INF] HTTP GET /api/Category responded 200 in 42.1106 ms
+2024-03-12 19:40:47.751 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Category - 200 269 application/json; charset=utf-8 58.3482ms
+2024-03-12 19:40:47.794 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Category - null null
+2024-03-12 19:40:47.799 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:40:47.802 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetCategoryDTO]]] GetCategory() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-12 19:40:47.813 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-12 19:40:47.820 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetCategoryDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:40:47.826 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 19.9168ms
+2024-03-12 19:40:47.831 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:40:47.834 +02:00 [INF] HTTP GET /api/Category responded 200 in 34.8791 ms
+2024-03-12 19:40:47.837 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Category - 200 269 application/json; charset=utf-8 43.0511ms
+2024-03-12 19:42:06.941 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Category - null null
+2024-03-12 19:42:06.949 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:42:06.954 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetCategoryDTO]]] GetCategory() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-12 19:42:06.974 +02:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-12 19:42:06.981 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetCategoryDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:42:06.985 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 27.9431ms
+2024-03-12 19:42:06.988 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:42:06.989 +02:00 [INF] HTTP GET /api/Category responded 200 in 39.8010 ms
+2024-03-12 19:42:06.994 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Category - 200 269 application/json; charset=utf-8 52.7494ms
+2024-03-12 19:42:07.394 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Category - null null
+2024-03-12 19:42:07.398 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:42:07.401 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetCategoryDTO]]] GetCategory() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-12 19:42:07.414 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-12 19:42:07.432 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetCategoryDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:42:07.436 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 30.2072ms
+2024-03-12 19:42:07.438 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:42:07.441 +02:00 [INF] HTTP GET /api/Category responded 200 in 42.1376 ms
+2024-03-12 19:42:07.444 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Category - 200 269 application/json; charset=utf-8 50.0571ms
+2024-03-12 19:42:54.633 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Category - null null
+2024-03-12 19:42:54.638 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:42:54.642 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetCategoryDTO]]] GetCategory() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-12 19:42:54.670 +02:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-12 19:42:54.682 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetCategoryDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:42:54.690 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 42.6511ms
+2024-03-12 19:42:54.694 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:42:54.695 +02:00 [INF] HTTP GET /api/Category responded 200 in 57.2082 ms
+2024-03-12 19:42:54.698 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Category - 200 269 application/json; charset=utf-8 64.6131ms
+2024-03-12 19:42:55.070 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Category - null null
+2024-03-12 19:42:55.073 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:42:55.074 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetCategoryDTO]]] GetCategory() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-12 19:42:55.081 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-12 19:42:55.084 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetCategoryDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:42:55.085 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 9.2084ms
+2024-03-12 19:42:55.087 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:42:55.091 +02:00 [INF] HTTP GET /api/Category responded 200 in 17.7322 ms
+2024-03-12 19:42:55.093 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Category - 200 269 application/json; charset=utf-8 23.8901ms
+2024-03-12 19:45:02.866 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Category - null null
+2024-03-12 19:45:02.875 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:45:02.877 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetCategoryDTO]]] GetCategory() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-12 19:45:02.904 +02:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-12 19:45:02.911 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetCategoryDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:45:02.914 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 29.9337ms
+2024-03-12 19:45:02.915 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:45:02.917 +02:00 [INF] HTTP GET /api/Category responded 200 in 42.1728 ms
+2024-03-12 19:45:02.919 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Category - 200 269 application/json; charset=utf-8 53.757ms
+2024-03-12 19:45:03.548 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Category - null null
+2024-03-12 19:45:03.557 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:45:03.561 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetCategoryDTO]]] GetCategory() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-12 19:45:03.572 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-12 19:45:03.591 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetCategoryDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:45:03.593 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 28.538ms
+2024-03-12 19:45:03.597 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:45:03.599 +02:00 [INF] HTTP GET /api/Category responded 200 in 42.5277 ms
+2024-03-12 19:45:03.604 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Category - 200 269 application/json; charset=utf-8 55.9714ms
+2024-03-12 19:46:45.547 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Category - null null
+2024-03-12 19:46:45.552 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:46:45.553 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetCategoryDTO]]] GetCategory() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-12 19:46:45.564 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-12 19:46:45.574 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetCategoryDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:46:45.576 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 20.778ms
+2024-03-12 19:46:45.581 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:46:45.583 +02:00 [INF] HTTP GET /api/Category responded 200 in 31.1269 ms
+2024-03-12 19:46:45.585 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Category - 200 269 application/json; charset=utf-8 42.2142ms
+2024-03-12 19:46:45.936 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Category - null null
+2024-03-12 19:46:45.939 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:46:45.940 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetCategoryDTO]]] GetCategory() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-12 19:46:45.946 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-12 19:46:45.949 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetCategoryDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:46:45.951 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 8.6163ms
+2024-03-12 19:46:45.952 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:46:45.955 +02:00 [INF] HTTP GET /api/Category responded 200 in 16.0186 ms
+2024-03-12 19:46:45.960 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Category - 200 269 application/json; charset=utf-8 24.0927ms
+2024-03-12 19:47:26.799 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Category - null null
+2024-03-12 19:47:26.819 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:47:26.821 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetCategoryDTO]]] GetCategory() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-12 19:47:26.834 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-12 19:47:26.856 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetCategoryDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:47:26.860 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 35.345ms
+2024-03-12 19:47:26.862 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:47:26.864 +02:00 [INF] HTTP GET /api/Category responded 200 in 44.3588 ms
+2024-03-12 19:47:26.866 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Category - 200 269 application/json; charset=utf-8 66.7561ms
+2024-03-12 19:47:27.227 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Category - null null
+2024-03-12 19:47:27.230 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:47:27.231 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetCategoryDTO]]] GetCategory() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-12 19:47:27.241 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-12 19:47:27.244 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetCategoryDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:47:27.247 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 12.5869ms
+2024-03-12 19:47:27.249 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:47:27.250 +02:00 [INF] HTTP GET /api/Category responded 200 in 20.2659 ms
+2024-03-12 19:47:27.253 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Category - 200 269 application/json; charset=utf-8 26.4837ms
+2024-03-12 19:47:46.490 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 19:47:46.494 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:47:46.495 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 19:47:46.507 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 19:47:46.516 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:47:46.518 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 18.6379ms
+2024-03-12 19:47:46.519 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:47:46.519 +02:00 [INF] HTTP GET /api/Book responded 200 in 25.2778 ms
+2024-03-12 19:47:46.520 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 30.6328ms
+2024-03-12 19:47:47.402 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 19:47:47.408 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:47:47.413 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 19:47:47.428 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 19:47:47.434 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:47:47.436 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 16.0349ms
+2024-03-12 19:47:47.438 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:47:47.440 +02:00 [INF] HTTP GET /api/Book responded 200 in 31.7973 ms
+2024-03-12 19:47:47.443 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 41.3477ms
+2024-03-12 19:47:48.551 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Category - null null
+2024-03-12 19:47:48.562 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:47:48.567 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetCategoryDTO]]] GetCategory() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-12 19:47:48.582 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-12 19:47:48.589 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetCategoryDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:47:48.592 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 17.4104ms
+2024-03-12 19:47:48.597 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:47:48.602 +02:00 [INF] HTTP GET /api/Category responded 200 in 40.0827 ms
+2024-03-12 19:47:48.606 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Category - 200 269 application/json; charset=utf-8 55.2196ms
+2024-03-12 19:47:48.655 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Category - null null
+2024-03-12 19:47:48.661 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:47:48.664 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetCategoryDTO]]] GetCategory() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-12 19:47:48.675 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-12 19:47:48.679 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetCategoryDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:47:48.682 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 14.5722ms
+2024-03-12 19:47:48.684 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:47:48.685 +02:00 [INF] HTTP GET /api/Category responded 200 in 24.4307 ms
+2024-03-12 19:47:48.688 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Category - 200 269 application/json; charset=utf-8 32.9961ms
+2024-03-12 19:48:03.314 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 19:48:03.317 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:48:03.319 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 19:48:03.330 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 19:48:03.336 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:48:03.338 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 15.2554ms
+2024-03-12 19:48:03.341 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:48:03.344 +02:00 [INF] HTTP GET /api/Book responded 200 in 27.0881 ms
+2024-03-12 19:48:03.350 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 36.0038ms
+2024-03-12 19:48:03.885 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 19:48:03.892 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:48:03.898 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 19:48:03.910 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 19:48:03.919 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:48:03.923 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 20.0574ms
+2024-03-12 19:48:03.926 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 19:48:03.930 +02:00 [INF] HTTP GET /api/Book responded 200 in 37.1369 ms
+2024-03-12 19:48:03.933 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 47.6915ms
+2024-03-12 19:48:15.315 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Category - null null
+2024-03-12 19:48:15.323 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:48:15.329 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetCategoryDTO]]] GetCategory() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-12 19:48:15.343 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-12 19:48:15.348 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetCategoryDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:48:15.350 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 13.5957ms
+2024-03-12 19:48:15.353 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:48:15.354 +02:00 [INF] HTTP GET /api/Category responded 200 in 31.1910 ms
+2024-03-12 19:48:15.357 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Category - 200 269 application/json; charset=utf-8 42.3175ms
+2024-03-12 19:48:15.373 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Category - null null
+2024-03-12 19:48:15.380 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:48:15.382 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetCategoryDTO]]] GetCategory() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-12 19:48:15.391 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-12 19:48:15.397 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetCategoryDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:48:15.399 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 12.5265ms
+2024-03-12 19:48:15.402 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:48:15.405 +02:00 [INF] HTTP GET /api/Category responded 200 in 24.1280 ms
+2024-03-12 19:48:15.410 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Category - 200 269 application/json; charset=utf-8 36.6484ms
+2024-03-12 19:50:32.336 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Category - null null
+2024-03-12 19:50:32.352 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:50:32.358 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetCategoryDTO]]] GetCategory() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-12 19:50:32.370 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-12 19:50:32.377 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetCategoryDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:50:32.379 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 13.8796ms
+2024-03-12 19:50:32.382 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:50:32.385 +02:00 [INF] HTTP GET /api/Category responded 200 in 32.4384 ms
+2024-03-12 19:50:32.389 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Category - 200 269 application/json; charset=utf-8 53.008ms
+2024-03-12 19:50:32.587 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Category - null null
+2024-03-12 19:50:32.593 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:50:32.595 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetCategoryDTO]]] GetCategory() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-12 19:50:32.605 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-12 19:50:32.608 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetCategoryDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 19:50:32.610 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 13.2675ms
+2024-03-12 19:50:32.612 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 19:50:32.613 +02:00 [INF] HTTP GET /api/Category responded 200 in 20.6055 ms
+2024-03-12 19:50:32.616 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Category - 200 269 application/json; charset=utf-8 28.271ms
+2024-03-12 20:17:06.638 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 20:17:06.644 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 20:17:06.647 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 20:17:06.709 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 20:17:06.714 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 20:17:06.716 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 58.2687ms
+2024-03-12 20:17:06.719 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 20:17:06.720 +02:00 [INF] HTTP GET /api/Book responded 200 in 76.4517 ms
+2024-03-12 20:17:06.724 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 85.7278ms
+2024-03-12 20:17:07.557 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 20:17:07.566 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 20:17:07.571 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 20:17:07.580 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 20:17:07.592 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 20:17:07.598 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 23.6247ms
+2024-03-12 20:17:07.604 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 20:17:07.606 +02:00 [INF] HTTP GET /api/Book responded 200 in 40.0070 ms
+2024-03-12 20:17:07.612 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 54.6274ms
+2024-03-12 20:30:24.526 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 20:30:24.532 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 20:30:24.534 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 20:30:24.577 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 20:30:24.581 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 20:30:24.584 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 47.592ms
+2024-03-12 20:30:24.585 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 20:30:24.586 +02:00 [INF] HTTP GET /api/Book responded 200 in 53.9820 ms
+2024-03-12 20:30:24.589 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 62.4651ms
+2024-03-12 20:30:25.432 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 20:30:25.435 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 20:30:25.437 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 20:30:25.445 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 20:30:25.458 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 20:30:25.460 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 20.6493ms
+2024-03-12 20:30:25.465 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 20:30:25.466 +02:00 [INF] HTTP GET /api/Book responded 200 in 30.8590 ms
+2024-03-12 20:30:25.471 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 39.1846ms
+2024-03-12 20:47:56.846 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 20:47:56.852 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 20:47:56.854 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 20:47:56.899 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 20:47:56.905 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 20:47:56.908 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 49.8389ms
+2024-03-12 20:47:56.910 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 20:47:56.911 +02:00 [INF] HTTP GET /api/Book responded 200 in 58.6502 ms
+2024-03-12 20:47:56.913 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 67.6364ms
+2024-03-12 20:47:57.784 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Book - null null
+2024-03-12 20:47:57.795 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 20:47:57.797 +02:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetBookDTO]]] GetBooks() on controller BookXChangeApi.Controllers.BookController (BookXChangeApi).
+2024-03-12 20:47:57.810 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Title`, `b`.`Author`, `b`.`CategoryId`, `c`.`Name` AS `CategoryName`
+FROM `Books` AS `b`
+INNER JOIN `Categories` AS `c` ON `b`.`CategoryId` = `c`.`Id`
+2024-03-12 20:47:57.822 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetBookDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 20:47:57.830 +02:00 [INF] Executed action BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi) in 29.4214ms
+2024-03-12 20:47:57.835 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.BookController.GetBooks (BookXChangeApi)'
+2024-03-12 20:47:57.841 +02:00 [INF] HTTP GET /api/Book responded 200 in 46.7481 ms
+2024-03-12 20:47:57.846 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Book - 200 1178 application/json; charset=utf-8 62.4761ms
+2024-03-12 20:48:00.236 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Category - null null
+2024-03-12 20:48:00.249 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 20:48:00.253 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetCategoryDTO]]] GetCategory() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-12 20:48:00.265 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-12 20:48:00.271 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetCategoryDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 20:48:00.275 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 18.9154ms
+2024-03-12 20:48:00.279 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 20:48:00.282 +02:00 [INF] HTTP GET /api/Category responded 200 in 33.2658 ms
+2024-03-12 20:48:00.286 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Category - 200 269 application/json; charset=utf-8 50.6729ms
+2024-03-12 20:48:00.337 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7040/api/Category - null null
+2024-03-12 20:48:00.343 +02:00 [INF] Executing endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 20:48:00.344 +02:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookXChangeBL.DTOs.GET.GetCategoryDTO]]] GetCategory() on controller BookXChangeApi.Controllers.CategoryController (BookXChangeApi).
+2024-03-12 20:48:00.352 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Categories` AS `c`
+2024-03-12 20:48:00.357 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookXChangeBL.DTOs.GET.GetCategoryDTO, BookXChangeBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-12 20:48:00.359 +02:00 [INF] Executed action BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi) in 13.1062ms
+2024-03-12 20:48:00.361 +02:00 [INF] Executed endpoint 'BookXChangeApi.Controllers.CategoryController.GetCategory (BookXChangeApi)'
+2024-03-12 20:48:00.362 +02:00 [INF] HTTP GET /api/Category responded 200 in 19.3256 ms
+2024-03-12 20:48:00.365 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7040/api/Category - 200 269 application/json; charset=utf-8 27.1857ms
