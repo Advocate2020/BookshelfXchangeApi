@@ -3,3 +3,4 @@
 *.v2
 .vs
 obj
+/firebase.json
