@@ -17,15 +17,21 @@ namespace BookXChangeDB.Databases
 
         private static void SeedData(ModelBuilder modelBuilder)
         {
-            AddCategories(modelBuilder);
+            //AddCategories(modelBuilder);
 
-            AddBooks(modelBuilder);
+            //AddBooks(modelBuilder);
+            AddRoles(modelBuilder);
 
         }
 
         private static void AddBooks(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Book>().HasData(BookData.data);
+        }
+
+        private static void AddRoles(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Role>().HasData(RoleData.data);
         }
 
         private static void AddCategories(ModelBuilder modelBuilder)
@@ -35,4 +41,5 @@ namespace BookXChangeDB.Databases
             );
         }
     }
+
 }
