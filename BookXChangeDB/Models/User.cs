@@ -34,5 +34,10 @@ namespace BookXChangeDB.Models
         public int? PersonId { get; set; }
 
         public Person? Person { get; set; }
+
+        [ForeignKey(nameof(Role))]
+        public int? RoleId { get; set; }
+
+        public Role? Role { get; set; }
     }
 }
