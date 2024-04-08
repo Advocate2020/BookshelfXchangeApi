@@ -18,6 +18,9 @@ namespace BookXChangeDB.Models
         public DateTime DateCreated { get; set; }
 
         public DateTime? DateModified { get; set; }
+
+
+
         public Book(int id, string title, string author, int categoryId, Category category, DateTime dateCreated, DateTime? dateModified)
         {
             Id = id;
@@ -27,7 +30,9 @@ namespace BookXChangeDB.Models
             Category = category;
             DateCreated = dateCreated;
             DateModified = dateModified;
+
         }
+
 
         public Book()
         {

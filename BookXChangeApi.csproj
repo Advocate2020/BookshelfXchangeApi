@@ -33,6 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BookXChangeApi\BCXGoogle\BCXGoogle.csproj" />
     <ProjectReference Include="BookXChangeBL\BookXChangeBL.csproj" />
     <ProjectReference Include="BookXChangeDB\BookXChangeDB.csproj" />
   </ItemGroup>

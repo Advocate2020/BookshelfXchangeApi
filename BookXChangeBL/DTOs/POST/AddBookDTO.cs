@@ -1,4 +1,5 @@
 ﻿using BookXChangeDB.Models;
+using Microsoft.AspNetCore.Http;
 using Swashbuckle.AspNetCore.Annotations;
 using System.ComponentModel.DataAnnotations;
 
@@ -14,8 +15,14 @@ namespace BookXChangeApi.DTOs
         [SwaggerSchema("The author of the book.")]
         public string Author { get; set; }
         [Required]
-        [SwaggerSchema("The id of the category.")]
+        [SwaggerSchema("The id of the category. 1 = Fiction, 2 = Non-Fiction, 3 = Science Fiction, 4 = Modern Literature, 5 = Coming of Age, 6 = Fantasy, 7 = Epic Fiction, 8 = Mystery, 9 = Thriller ")]
+
         public int CategoryId { get; set; }
+
+        [Required]
+        [SwaggerSchema("The images associated with the book.")]
+        public ICollection<IFormFile> BookImages { get; set; }
+
 
         public Book Map()
         {
@@ -23,8 +30,9 @@ namespace BookXChangeApi.DTOs
             {
                 Title = Title,
                 Author = Author,
-                CategoryId = CategoryId
+                CategoryId = CategoryId,
             };
         }
+
     }
 }

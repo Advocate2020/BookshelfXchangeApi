@@ -5,6 +5,7 @@ using BookXChangeApi.DTOs;
 using BookXChangeBL.DTOs.GET;
 using BookXChangeBL.DTOs.UPDATE;
 using BookXChangeDB.Databases;
+using Firebase.Storage;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookXChangeBL.Logic.BookNS
@@ -27,6 +28,7 @@ namespace BookXChangeBL.Logic.BookNS
             return books;
         }
 
+
         public async Task<GetBookDTO> GetBookByIdAsync(int id)
         {
             var book = await _Queries.GetBookByIdAsync(id).FirstOrDefaultAsync();
@@ -34,12 +36,20 @@ namespace BookXChangeBL.Logic.BookNS
             return book ?? throw new ClientError("Book waas not found.");
         }
 
-        public async Task AddBookAsync(AddBookDTO form)
+        public async Task AddBookAsync(AddBookDTO form, string idToken)
         {
-            await using var tContext = await ContextFactory.CreateDbContextAsync();
-            await using var transaction = await tContext.BeginDefaultTransactionAsync();
+            var firebaseStorage = new FirebaseStorage(
+        "bookshelfxchange.appspot.com",
+        new FirebaseStorageOptions
+        {
+            AuthTokenAsyncFactory = () => Task.FromResult(idToken),
 
-            try
+        });
+
+            await ContextFactory
+            .CreateDbContextAsync()
+            .WithDefaultTimeout()
+            .ExecuteWithTransaction(async (tContext) =>
             {
                 // Check if a book with the same name and author already exists
                 var existingBook = await _Queries.GetBooks()
@@ -49,18 +59,42 @@ namespace BookXChangeBL.Logic.BookNS
                 {
                     throw new ClientError("Book already exists.");
                 }
-
+                // Map the form data to a Book entity asynchronously
                 var book = form.Map();
 
-                await tContext.AddAndSaveAsync(book);
-                await transaction.CommitAsync();
-            }
-            catch (Exception)
-            {
-                await transaction.RollbackAsync();
-                throw;
-            }
+                tContext.Add(book);
+
+                await tContext.SaveChangesAsync();
+
+
+
+                // Upload each provided image to Firebase Storage with file name and book ID
+                foreach (var formFile in form.BookImages)
+                {
+                    try
+                    {
+                        // Generate a unique file name based on the book ID and the original file name
+                        string uniqueFileName = $"{book.Id}_{formFile.FileName}";
+
+                        // Upload the image file to Firebase Storage
+                        var fileStream = formFile.OpenReadStream();
+                        var response = await firebaseStorage.Child("book_images").Child(uniqueFileName).PutAsync(fileStream);
+
+
+                    }
+
+                    catch (FirebaseStorageException ex)
+                    {
+                        throw new ClientError($"Failed to upload files.{ex.Message}");
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new ClientError("Failed to upload files.");
+                    }
+                }
+            });
         }
+
 
         public async Task UpdateBookAsync(int id, UpdateBookDTO form)
         {

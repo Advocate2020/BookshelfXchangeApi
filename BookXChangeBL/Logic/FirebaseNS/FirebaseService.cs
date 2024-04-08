@@ -28,6 +28,12 @@ namespace BookXChangeBL.Logic.FirebaseNS
 
             return token.Uid;
         }
+        public static async Task<string> GetUsersTokenAsync(HttpRequest request)
+        {
+            var token = await GetUserTokenAsync(request);
+
+            return token;
+        }
 
         /// <summary>
         /// Get the email stored inside the firebase token.
@@ -92,6 +98,31 @@ namespace BookXChangeBL.Logic.FirebaseNS
             return token;
         }
 
+        public static async Task<string> GetUserTokenAsync(HttpRequest request)
+        {
+            const string bearer = "Bearer ";
+
+            // Get the token from the Authorization header.
+            var value = request.Headers.Authorization.ToString();
+
+            if (value is null)
+            {
+                throw new ClientError(ErrorStrings.WasNull("Bearer token"));
+            }
+
+            if (value.Length < bearer.Length)
+            {
+                throw new ClientError("Invalid token.");
+            }
+
+            // Remove the "bearer " text.
+            var idToken = value["Bearer ".Length..].Trim();
+
+            await FirebaseAuth.DefaultInstance.VerifyIdTokenAsync(idToken);
+
+            return idToken;
+        }
+
         public static async Task SetUserClaims(HttpRequest request, UserCustomClaims userClaims)
         {
             var token = await GetTokenAsync(request);
@@ -106,6 +137,17 @@ namespace BookXChangeBL.Logic.FirebaseNS
             };
 
             await FirebaseAuth.DefaultInstance.SetCustomUserClaimsAsync(token.Uid, claims);
+        }
+
+        public static async Task SetAminUserClaims(string firebaseUserId, UserCustomClaims userClaims)
+        {
+            var claims = new Dictionary<string, object>
+            {
+                // Add all roles that the user belongs to the the claims.
+                { ClaimTypes.Role, userClaims.Roles },
+            };
+
+            await FirebaseAuth.DefaultInstance.SetCustomUserClaimsAsync(firebaseUserId, claims);
         }
     }
 

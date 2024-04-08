@@ -15,6 +15,5 @@ namespace BookXChangeDB.Databases
         public DbSet<Role> Role { get; set; }
         public DbSet<Person> Person { get; set; }
 
-
     }
 }

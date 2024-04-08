@@ -1,17 +1,22 @@
 using Batsamayi.Shared.BL.ExceptionHandling;
 using BookXChangeApi.Controllers.Interfaces;
 using BookXChangeApi.DTOs;
+using BookXChangeApi.Util;
+using BookXChangeApi.Util.Swagger;
 using BookXChangeApi.Util.Swagger.SwaggerResponseAttributes;
 using BookXChangeBL.DTOs.GET;
 using BookXChangeBL.DTOs.UPDATE;
 using BookXChangeBL.Logic.BookNS;
+using BookXChangeBL.Logic.FirebaseNS;
 using BookXChangeDB.Databases;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Swashbuckle.AspNetCore.Annotations;
 
 namespace BookXChangeApi.Controllers
 {
+
     public class BookController : BookXChangeController
     {
         public BookBL BL;
@@ -22,7 +27,11 @@ namespace BookXChangeApi.Controllers
         }
 
         [HttpGet]
-        [SwaggerOperation("Get Books", "Get a list of books.")]
+        [SwaggerOperation(
+            Summary = "Get Books",
+            Description = "Get a list of books.",
+            Tags = new[] { BookshelfXCTags.Book })]
+
         [SuccessResponse(type: typeof(List<GetBookDTO>))]
         public async Task<ActionResult<List<GetBookDTO>>> GetBooks()
         {
@@ -31,8 +40,13 @@ namespace BookXChangeApi.Controllers
             return Ok(books);
         }
 
+
         [HttpGet("{id}")]
-        [SwaggerOperation("Get Book", "Get a book by id.")]
+        [Authorize(Roles = "Admin")]
+        [SwaggerOperation(
+            Summary = "Get Book",
+            Description = "Get a book by its id.",
+            Tags = new[] { BookshelfXCTags.Book })]
         [SuccessResponse(type: typeof(GetBookDTO))]
         public async Task<ActionResult<GetBookDTO>> GetBookById(int id)
         {
@@ -42,17 +56,34 @@ namespace BookXChangeApi.Controllers
         }
 
         [HttpPost]
-        [SwaggerOperation("Add a book", "Add a new book.")]
+        [Authorize(Roles = "Admin")]
+        [SwaggerOperation(
+            Summary = "Add a book",
+            Description = "Add a new book.",
+            Tags = new[] { BookshelfXCTags.Book })]
         [SuccessResponse("Book Added.")]
-        public async Task<ActionResult> AddBook(AddBookDTO form)
+        public async Task<ActionResult> AddBook([FromForm] AddBookDTO form)
         {
-            await BL.AddBookAsync(form);
+            foreach (var image in form.BookImages)
+            {
+                FileUploadValidator.ValidateFile(image, FileExtensions.All);
 
-            return Ok();
+            }
+
+            var token = await FirebaseService.GetUsersTokenAsync(Request);
+
+            await BL.AddBookAsync(form, token);
+
+            return Ok("Book Added Successfully.");
         }
 
         [HttpPut("{id}")]
-        [SwaggerOperation("Update a book", "Update an existing book.")]
+        [Authorize(Roles = "Admin")]
+        [SwaggerOperation(
+            Summary = "Update a book",
+            Description = "Update an existing book.",
+            Tags = new[] { BookshelfXCTags.Book })]
+
         [SuccessResponse("Book Updated.")]
         public async Task<ActionResult> UpdateBook(int id, UpdateBookDTO form)
         {
@@ -72,7 +103,12 @@ namespace BookXChangeApi.Controllers
         }
 
         [HttpDelete("{id}")]
-        [SwaggerOperation("Delete Book", "Delete a book by id.")]
+        [Authorize(Roles = "Admin")]
+        [SwaggerOperation(
+            Summary = "Delete Book",
+            Description = "Delete a book by id.",
+            Tags = new[] { BookshelfXCTags.Book })]
+
         [SuccessResponse("Book Deleted.")]
         public async Task<ActionResult> DeleteBook(int id)
         {
