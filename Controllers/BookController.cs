@@ -1,7 +1,6 @@
 using Batsamayi.Shared.BL.ExceptionHandling;
 using BookXChangeApi.Controllers.Interfaces;
 using BookXChangeApi.DTOs;
-using BookXChangeApi.Util;
 using BookXChangeApi.Util.Swagger;
 using BookXChangeApi.Util.Swagger.SwaggerResponseAttributes;
 using BookXChangeBL.DTOs.GET;
@@ -56,7 +55,7 @@ namespace BookXChangeApi.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Admin")]
+        [Authorize]
         [SwaggerOperation(
             Summary = "Add a book",
             Description = "Add a new book.",
@@ -64,11 +63,11 @@ namespace BookXChangeApi.Controllers
         [SuccessResponse("Book Added.")]
         public async Task<ActionResult> AddBook([FromForm] AddBookDTO form)
         {
-            foreach (var image in form.BookImages)
-            {
-                FileUploadValidator.ValidateFile(image, FileExtensions.All);
+            //foreach (var image in form.BookImages)
+            //{
+            //    FileUploadValidator.ValidateFile(image, FileExtensions.All);
 
-            }
+            //}
 
             var token = await FirebaseService.GetUsersTokenAsync(Request);
 

@@ -19,6 +19,8 @@ namespace BookXChangeBL.Logic.BookNS
                     Id = b.Id,
                     Title = b.Title,
                     Author = b.Author,
+                    Description = b.Description,
+                    PublishDate = b.PublishDate,
                     CategoryId = b.CategoryId,
                     CategoryName = b.Category.Name,
 
@@ -35,8 +37,10 @@ namespace BookXChangeBL.Logic.BookNS
                     Id = b.Id,
                     Title = b.Title,
                     Author = b.Author,
+                    Description = b.Description,
+                    PublishDate = b.PublishDate,
                     CategoryId = b.CategoryId,
-                    CategoryName = b.Category.Name
+                    CategoryName = b.Category.Name,
                 });
         }
 

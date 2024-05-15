@@ -1,4 +1,5 @@
 using Batsamayi.Shared.API.Swagger;
+using BCXGoogle.SecretManagerNS;
 using BookXChangeApi.Constants;
 using BookXChangeApi.Util.Swagger;
 using BookXChangeDB.Databases;
@@ -11,7 +12,7 @@ using Microsoft.IdentityModel.Tokens;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
-
+var _sm = new GoogleSecretManagerService();
 // Add services to the container.
 builder.Services.AddScoped<BCXConstants>();
 var serverVersion = ServerVersion.AutoDetect(BCXConstants.ConnectionString);
@@ -70,6 +71,8 @@ builder.Services.AddCors(o =>
         .AllowAnyMethod()
         .AllowAnyHeader());
 });
+
+
 builder.Services.AddControllers().AddNewtonsoftJson(op => op.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
 //Add support to logging with SERILOG
@@ -99,7 +102,7 @@ try
 
     FirebaseApp.Create(new AppOptions
     {
-        Credential = GoogleCredential.FromFile(BCXConstants.FirebaseSecret)
+        Credential = GoogleCredential.FromJson(_sm.GetSecret(BCXConstants.GoogleSecrete, BCXConstants.FirebaseSecretFile))
     });
 }
 catch (Exception e)

@@ -3,6 +3,7 @@ using BookXChangeApi.Constants;
 using BookXChangeApi.Controllers.Interfaces;
 using BookXChangeApi.Util;
 using BookXChangeApi.Util.ApiKeyNS;
+using BookXChangeApi.Util.Swagger;
 using BookXChangeApi.Util.Swagger.SwaggerResponseAttributes;
 using BookXChangeDB.Databases;
 using Firebase.Auth;
@@ -29,7 +30,7 @@ namespace BookXChangeApi.Controllers
         [AllowAnonymous]
         [SwaggerOperation(
             Summary = "Dev Login",
-            Description = "Log in and get a Bearer Token. This endpoint should only be used for testing purposes."
+            Description = "Log in and get a Bearer Token. This endpoint should only be used for testing purposes.", Tags = new[] { BookshelfXCTags.Dev }
             )]
         [SuccessResponse("Bearer token retrieved.")]
         public async Task<ActionResult> TestLogin(string email, string password)

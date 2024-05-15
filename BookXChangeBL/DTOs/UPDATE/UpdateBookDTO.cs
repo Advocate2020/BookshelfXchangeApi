@@ -11,6 +11,12 @@ namespace BookXChangeBL.DTOs.UPDATE
         [SwaggerSchema("The author of the book.")]
         public required string Author { get; set; }
 
+        [SwaggerSchema("The description of the book.")]
+        public string Description { get; set; }
+
+        [SwaggerSchema("The publish date of the book.")]
+        public DateTime PublishDate { get; set; }
+
         [SwaggerSchema("The id of the category.")]
         public required int CategoryId { get; set; }
 
@@ -19,6 +25,8 @@ namespace BookXChangeBL.DTOs.UPDATE
 
             book.Title = Title;
             book.Author = Author;
+            book.Description = Description;
+            book.PublishDate = PublishDate;
             book.CategoryId = CategoryId;
             book.DateModified = DateTime.UtcNow;
         }

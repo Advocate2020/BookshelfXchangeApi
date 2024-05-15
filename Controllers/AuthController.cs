@@ -1,4 +1,5 @@
 ﻿using BookXChangeApi.Controllers.Interfaces;
+using BookXChangeApi.Util.Swagger;
 using BookXChangeApi.Util.Swagger.SwaggerResponseAttributes;
 using BookXChangeBL.DTOs.POST;
 using BookXChangeBL.Logic.FirebaseNS;
@@ -24,7 +25,7 @@ namespace BookXChangeApi.Controllers
 
         [HttpPost]
         [Authorize]
-        [SwaggerOperation("Add a user", "Add a new user.")]
+        [SwaggerOperation(Summary = "Add a user", Description = "Add a new user.", Tags = new[] { BookshelfXCTags.Auth })]
         [SuccessResponse("User registered successfully.")]
         public async Task<IActionResult> Profile(AddUserDTO profile)
         {

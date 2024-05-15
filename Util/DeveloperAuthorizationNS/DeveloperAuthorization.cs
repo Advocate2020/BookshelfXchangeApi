@@ -5,7 +5,6 @@ namespace BookXChangeApi.Util.DeveloperAuthorizationNS
 {
     public class DeveloperAuthorization
     {
-
         public static string GenerateHash(string apiKey)
         {
             return HashUtil.HashPassword(apiKey);
@@ -13,7 +12,7 @@ namespace BookXChangeApi.Util.DeveloperAuthorizationNS
 
         public static bool IsApiKeyValid(string passwordToVerify)
         {
-            GoogleSecretManagerService _sm = new GoogleSecretManagerService();
+            GoogleSecretManagerService _sm = new();
             string hashedPassword = _sm.GetSecret(BCXConstants.GoogleSecrete, BCXConstants.ApiSecrete);
 
 

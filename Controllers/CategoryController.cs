@@ -1,4 +1,5 @@
 ﻿using BookXChangeApi.Controllers.Interfaces;
+using BookXChangeApi.Util.Swagger;
 using BookXChangeApi.Util.Swagger.SwaggerResponseAttributes;
 using BookXChangeBL.DTOs.GET;
 using BookXChangeBL.DTOs.POST;
@@ -20,7 +21,7 @@ namespace BookXChangeApi.Controllers
         }
 
         [HttpGet]
-        [SwaggerOperation("Get Categories", "Get a list of book categories.")]
+        [SwaggerOperation(Summary = "Get Categories", Description = "Get a list of book categories.", Tags = new[] { BookshelfXCTags.Category })]
         [SuccessResponse(type: typeof(List<GetCategoryDTO>))]
         public async Task<ActionResult<List<GetCategoryDTO>>> GetCategory()
         {
@@ -30,7 +31,7 @@ namespace BookXChangeApi.Controllers
         }
 
         [HttpPost]
-        [SwaggerOperation("Add a book category", "Add a new category.")]
+        [SwaggerOperation(Summary = "Add a book category", Description = "Add a new category.", Tags = new[] { BookshelfXCTags.Category })]
         [SuccessResponse("Category Added.")]
         public async Task<ActionResult> AddCategory(AddCategoryDTO form)
         {

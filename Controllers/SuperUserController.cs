@@ -1,6 +1,7 @@
 ﻿using Batsamayi.Shared.API.GeneralResponse;
 using BookXChangeApi.Controllers.Interfaces;
 using BookXChangeApi.Util.ApiKeyNS;
+using BookXChangeApi.Util.Swagger;
 using BookXChangeApi.Util.Swagger.SwaggerResponseAttributes;
 using BookXChangeBL.Logic.FirebaseNS;
 using BookXChangeDB.Databases;
@@ -10,6 +11,7 @@ using FirebaseAdmin.Auth;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Swashbuckle.AspNetCore.Annotations;
 using System.Security.Claims;
 
 namespace WowApi.Controllers
@@ -28,6 +30,7 @@ namespace WowApi.Controllers
         [HttpPost("set-role-admin")]
         [ApiKeyRequired]
         [AllowAnonymous]
+        [SwaggerOperation(Summary = "Make a user admin", Description = "A user becomes an admin.", Tags = new[] { BookshelfXCTags.WebSuperUser })]
         [SuccessResponse()]
         public async Task<IActionResult> SetRoleToDepartmentOfTransportAdminAsync(string firebaseUserId)
         {

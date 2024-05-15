@@ -11,6 +11,9 @@ namespace BookXChangeBL.DTOs.GET
         public required string Title { get; set; }
         [SwaggerSchema("The author of the book.")]
         public required string Author { get; set; }
+        [SwaggerSchema("The description of the book.")]
+        public required string Description { get; set; }
+        public required DateTime PublishDate { get; set; }
         [SwaggerSchema("The category id of the book.")]
         public required int CategoryId { get; set; }
         [SwaggerSchema("The category name of the book.")]
